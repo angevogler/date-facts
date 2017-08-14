@@ -21,9 +21,10 @@ magentaDay = chalk.magenta(magentaDay);
 console.log(`It is the ${magentaDay} of the year`)
 
 // display seconds into the day
-let cyanSeconds = (moment().hour()*60)*60;
-cyanSeconds += moment().minute()*60;
-cyanSeconds += moment().second();
+// let cyanSeconds = (moment().hour()*60)*60;
+// cyanSeconds += moment().minute()*60;
+// cyanSeconds += moment().second();
+let cyanSeconds = (moment().hour() * 3600) + (moment().minute() * 60) + (moment().second());
 // turn seconds cyan
 cyanSeconds = chalk.cyan(cyanSeconds);
 
